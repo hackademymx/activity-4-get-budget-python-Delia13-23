@@ -1,3 +1,9 @@
 def getTotalBudget(people):
-    pass
-    '''Your amazing code here'''
+    
+    suma = []
+    for i in people:
+        suma = suma + [j for k,j in i.items() if k == 'budget']
+    
+    return (sum(suma))
+
+    
